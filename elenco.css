@@ -1,0 +1,435 @@
+/* Estilos gerais para o corpo e layout */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(213, 208, 208);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 1000px;
+}
+
+/* Cabeçalho */
+header {
+    position: fixed;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(4, 4, 111);
+    padding: 5px;
+    margin: 0px auto;
+    top: 0;
+    z-index: 1000;
+}
+
+.Logo {
+    display: block;
+    margin: 0 auto 10px;
+    height: 100px;
+    width: 300px;
+    align-items: center;
+}
+
+nav {
+    text-align: center;
+}
+
+/* Barra Lateral */
+#barraLateral {
+    background-color: rgb(4, 4, 111);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 150vh;
+    width: 150px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: transform 0.3s ease;
+    padding-top: 80px;
+    overflow: hidden;
+}
+
+#barraLateral .itenslaterais {
+    color: white;
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+#barraLateral .subitenslaterais {
+    margin: 10px 0;
+    width: 100%;
+}
+
+#barraLateral .itenslaterais {
+    font-size: 22px;
+    text-decoration: none;
+    text-align: justify;
+    color: black;
+    display: block;
+    padding: 10px 0;
+    color: white;
+}
+
+#barraLateral .itenslaterais:hover {
+    color: rgb(250, 162, 0);
+    transition: color 0.3s ease;
+}
+
+#btn {
+    font-size: 50px;
+}
+
+#barraLateral.hidden {
+    transform: translateX(-100%);
+}
+
+/* Classe para mostrar a barra lateral */
+#barraLateral.show-sidebar {
+    transform: translateX(0);
+}
+
+/* Botão para abrir/fechar a barra lateral */
+.toggle-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: rgb(4, 4, 111);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1001;
+    /* Certifica que o botão fica acima de outros elementos */
+}
+
+/* Ícones */
+.fa-solid {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Conteúdo principal */
+main {
+    padding-top: 175px;
+}
+
+.topicoPrincipal {
+    background-color: rgb(4, 4, 111);
+    color: rgb(236, 191, 40);
+    box-shadow: rgba(0, 0, 0, 0.349) 10px 10px 10px;
+    padding: 10px;
+    margin: 30px 200px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.jogadores .content h1 {
+    background: none !important;
+    background-color: transparent !important;
+    display: inline;
+    /* Evita que ocupe toda a largura e tenha fundo */
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+.jogadores-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.jogadores {
+    width: 300px;
+    aspect-ratio: 1/0.7;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    box-shadow: rgba(0, 0, 0, 0.349) 5px 10px 10px;
+}
+
+
+.jogadores .content {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 2;
+    color: rgb(250, 243, 243);
+}
+
+.jogadores .imagem-box {
+    width: 100%;
+    height: 200%;
+    border-radius: inherit;
+}
+
+.jogadores .imagem-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 90%;
+    border-radius: inherit;
+    transition: 0.5s ease-in-out;
+}
+
+.jogadores::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid rgb(239, 236, 236);
+    border-radius: inherit;
+    opacity: 0.3;
+    transition: 0.4s ease-in-out;
+}
+
+.jogadores:hover img {
+    filter: brightness(0.7);
+    transform: scale(1.05);
+}
+
+.jogadores:hover::after {
+    opacity: 1;
+    inset: 20px;
+}
+
+.content {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.jogadores:hover .content {
+    opacity: 1;
+}
+
+/* Estilos para o conteúdo da página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(4, 4, 111);
+    color: white;
+}
+
+@media (max-width: 450px) {
+    body {
+        background-color: rgb(213, 208, 208);
+        font-family: Arial, Helvetica, sans-serif;
+        height: 450px;
+    }
+
+    .Logo {
+        height: 50px;
+        width: 150px;
+    }
+
+    .topicoPrincipal {
+        margin: 30px 10px;
+    }
+
+    /* ================================NOTICIAS DO SITE================================== */
+
+    .news-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        padding-left: 20px;
+    }
+
+    .nova-noticia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 90%;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nova-noticia h2,
+    .nova-noticia h3 {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        color: rgb(4, 4, 111);
+        text-align: center;
+
+    }
+
+    .divisaoNoticias {
+        color: #1e51aa;
+    }
+
+    .nova-noticia img {
+        max-width: 100%;
+        height: 300px;
+        padding: 10px;
+
+        display: block;
+        margin: 0 auto;
+    }
+
+    .nova-noticia p {
+        margin-top: 10px;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+
+    /* ================================BARRA LATERAL====================================== */
+    /* Estilo da barra lateral */
+    #barraLateral {
+        background-color: rgb(4, 4, 111);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100vh;
+        width: 250px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        transition: transform 0.3s ease;
+        padding-top: 80px;
+        overflow: hidden;
+    }
+
+    #barraLateral .itenslaterais {
+        color: white;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #barraLateral .subitenslaterais {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    #barraLateral .itenslaterais {
+        font-size: 1.5rem;
+        text-decoration: none;
+        text-align: justify;
+        color: black;
+        display: block;
+        padding: 10px 0;
+        color: white;
+    }
+
+    #barraLateral .itenslaterais:hover {
+        color: rgb(250, 162, 0);
+        transition: color 0.3s ease;
+    }
+
+    #btn {
+        font-size: 30px;
+    }
+
+    /* Botão de alternar */
+    .toggle-button {
+        font-family: Arial, Helvetica, sans-serif;
+        position: fixed;
+        color: white;
+        top: 10px;
+        left: 10px;
+        background-color: rgb(4, 4, 111);
+        border: none;
+        padding: 10px 20px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    /* ===========================JOGADORES======================== */
+
+
+    .jogadores {
+        height: 250px;
+        aspect-ratio: 1/0.7;
+        border-radius: 8px;
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        box-shadow: rgba(0, 0, 0, 0.349) 5px 10px 10px;
+    }
+
+    .jogadores-container {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        flex-wrap: wrap;
+        padding: 10px;
+
+    }
+
+    .jogadores .imagem-box {
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        position: relative;
+
+    }
+
+    jogadores::after {
+        content: "";
+        height: 80%;
+        position: absolute;
+        inset: 0;
+        border: 2px solid white;
+        border-radius: inherit;
+        opacity: 0;
+        transition: 0.4s ease-in-out;
+    }
+
+
+    .jogadores .imagem-box img {
+        width: 100%;
+        height: 120%;
+        object-fit: cover;
+        object-position: 50% 45%;
+        border-radius: inherit;
+        transition: 0.5s ease-in-out;
+    }
+
+    .content {
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+}

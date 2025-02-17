@@ -47,8 +47,8 @@ nav {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 100vh;
-  width: 250px;
+  height: 150vh;
+  width: 150px;
   position: fixed;
   left: 0;
   top: 0;
@@ -61,7 +61,7 @@ nav {
   color: white;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 10px;
   width: 100%;
   text-align: center;
 }
@@ -90,28 +90,32 @@ nav {
   font-size: 50px;
 }
 
-/* Botão de alternar */
-.toggle-button {
-  font-family: Arial, Helvetica, sans-serif;
-  position: fixed;
-  color: white;
-  top: 10px;
-  left: 10px;
-  background-color: rgb(4, 4, 111);
-  border: none;
-  padding: 10px 20px;
-  font-size: 1.5rem;
-  cursor: pointer;
-  z-index: 1000;
-}
-
 #barraLateral.hidden {
   transform: translateX(-100%);
 }
 
-/* Classe para mostrar a barra lateral */
 #barraLateral.show-sidebar {
   transform: translateX(0);
+}
+
+/* Botão de alternar */
+.toggle-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: rgb(4, 4, 111);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1001;
+  /* Certifica que o botão fica acima de outros elementos */
+}
+
+.fa-solid {
+  font-size: 24px;
+  margin-right: 10px;
 }
 
 /* 
@@ -305,8 +309,17 @@ footer {
 }
 
 /* ===================SLIDES DIRETORIA================== */
-.jogadores-container {
+.jogadores .content h1 {
+  background: none !important;
+  background-color: transparent !important;
+  display: inline;
+  /* Evita que ocupe toda a largura e tenha fundo */
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+}
 
+.jogadores-container {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -327,6 +340,7 @@ footer {
   box-shadow: rgba(0, 0, 0, 0.349) 5px 10px 10px;
 }
 
+
 .jogadores .content {
   width: 80%;
   position: absolute;
@@ -334,9 +348,10 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+  z-index: 2;
+  color: rgb(250, 243, 243);
 }
 
 .jogadores .imagem-box {
@@ -358,9 +373,9 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  border: 2px solid white;
+  border: 2px solid rgb(239, 236, 236);
   border-radius: inherit;
-  opacity: 0;
+  opacity: 0.3;
   transition: 0.4s ease-in-out;
 }
 
@@ -474,6 +489,39 @@ footer {
 .desenvolvedores b {
   font-size: 20px;
   /* Destaque para "DESENVOLVIDO:" */
+}
+
+/* ==================== ELENCO ==================== */
+.elenco-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.jogador {
+  text-align: center;
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+
+.jogador img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.jogador h2 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.jogador p {
+  color: #666;
 }
 
 /* =================================RESPONSIVO================================== */
@@ -732,7 +780,4 @@ footer {
     width: 30px;
     height: 30px;
   }
-
-
-
 }
