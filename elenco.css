@@ -251,55 +251,6 @@ footer {
         margin: 30px 10px;
     }
 
-    /* ================================NOTICIAS DO SITE================================== */
-
-    .news-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
-        padding-left: 20px;
-    }
-
-    .nova-noticia {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
-        width: 90%;
-        padding: 10px;
-        border-radius: 5px;
-    }
-
-    .nova-noticia h2,
-    .nova-noticia h3 {
-        margin: 0;
-        width: 100%;
-        height: 100%;
-        color: rgb(4, 4, 111);
-        text-align: center;
-
-    }
-
-    .divisaoNoticias {
-        color: #1e51aa;
-    }
-
-    .nova-noticia img {
-        max-width: 100%;
-        height: 300px;
-        padding: 10px;
-
-        display: block;
-        margin: 0 auto;
-    }
-
-    .nova-noticia p {
-        margin-top: 10px;
-        font-size: 14px;
-        text-align: justify;
-    }
-
 
     /* ================================BARRA LATERAL====================================== */
     /* Estilo da barra lateral */
@@ -310,12 +261,13 @@ footer {
         justify-content: flex-start;
         align-items: center;
         height: 100vh;
-        width: 250px;
+        width: 150px;
         position: fixed;
         left: 0;
         top: 0;
         transition: transform 0.3s ease;
-        padding-top: 80px;
+        padding-top: 70px;
+        padding-left: 0;
         overflow: hidden;
     }
 
@@ -329,7 +281,7 @@ footer {
     }
 
     #barraLateral .subitenslaterais {
-        margin: 10px 0;
+        margin: none;
         width: 100%;
     }
 

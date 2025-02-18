@@ -5,35 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="IMG/Logos/LOGO SITE.png" type="image/x-icon">
+    <!-- TITULO DA PAGINA -->
     <title>Elenco - Modena</title>
+    <!-- CHAMA O CSS -->
     <link rel="stylesheet" href="elenco.css">
+    <!-- CHAMA O JAVA SCRIPT -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- CHAMA OS ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="elenco.js" defer></script> <!-- Script específico -->
+    <!-- SCRIPT ESPECIFICOS -->
+    <script src="elenco.js" defer></script>
 </head>
 
 <body>
-    <!-- Cabeçalho -->
+    <!-- ============= CABEÇALHO ============== -->
     <header>
         <img src="IMG/Logos/LogoModena.png" alt="Logo Modena" class="Logo">
-
-        <!-- Botão de alternância para mostrar/ocultar a barra lateral -->
+        <!-- BOTÃO DA BARRA LATERAL -->
         <button id="toggleButton" class="toggle-button">
             <i class="bi bi-list" id="btn"></i>
         </button>
 
 
-        <!-- Barra lateral (menu) -->
+        <!-- ========== BARRA LATERAL =========== -->
         <aside id="barraLateral" class="hidden">
             <nav>
                 <ul class="itenslaterais">
-                    <!-- Home -->
+                    <!-- APARECE "HOME" NA BARRA E LEVA À PÁGINA PRINCIPAL-->
                     <li class="subitenslaterais">
                         <a href="index.html" class="itenslaterais">
                             <i class="fa-solid fa-house"></i><span>Home</span>
                         </a>
                     </li>
-                    <!-- Elenco -->
+                    <!-- APARECE "ELENCO" NA BARRA E LEVA À PÁGINA DE ELENCO -->
                     <li class="subitenslaterais">
                         <a href="elenco.html" class="itenslaterais">
                             <i class="fa-solid fa-users"></i><span>Elenco</span>
@@ -49,21 +53,22 @@
 
     <!-- =========== DIRETORIA ============== -->
     <main>
+        <!-- APARECE O TÓPICO -->
         <section id="diretoria" class="topicoPrincipal">
             <h1>DIRETORIA MODENA</h1>
         </section>
+        <!-- CAIXA DOS JOGADORES  -->
         <div class="jogadores-container">
             <div class="jogadores">
                 <div class="imagem-box">
                     <img src="IMG/Jogadores/natan.jpg" alt="">
                 </div>
-
                 <div class="content" class="jogadores">
                     <h1 class="jogador">Natan Felix</h1>
                     <p>Ponteiro</p>
                 </div>
             </div>
-
+            <!-- ===================================================================================== -->
             <div class="jogadores" class="jogadores">
                 <div class="imagem-box">
                     <img src="IMG/Jogadores/tiago.jpg" alt="">
@@ -74,7 +79,7 @@
                     <p>Levantador</p>
                 </div>
             </div>
-
+            <!-- ==================================================================================== -->
             <div class="jogadores" class="jogadores">
                 <div class="imagem-box">
                     <img src="IMG/Jogadores/Leco.jpg" alt="">
@@ -85,6 +90,7 @@
                     <p>Líbero</p>
                 </div>
             </div>
+            <!-- ==================================================================================  -->
             <div class="jogadores" class="jogadores">
                 <div class="imagem-box">
                     <img src="IMG/Jogadores/gigi.jpg" alt="">
@@ -95,6 +101,7 @@
                     <p>Técnica</p>
                 </div>
             </div>
+            <!-- ================================================================================== -->
             <div class="jogadores" class="jogadores">
                 <div class="imagem-box">
                     <img src="IMG/Jogadores/deise.jpg" alt="">
@@ -105,6 +112,7 @@
                     <p>Auxiliar Técnica</p>
                 </div>
             </div>
+            <!-- ================================================================================= -->
             <div class="jogadores" class="jogadores">
                 <div class="imagem-box">
                     <img src="IMG/Jogadores/Cadu.jpg" alt="">
@@ -115,7 +123,9 @@
                     <p>Fisioterapeuta</p>
                 </div>
             </div>
+            <!-- =============================================================================== -->
         </div>
+        <!-- FIM DA CAIXA DE JOGADORES -->
         <!-- ================== TIME A ================== -->
         <section id="TIME A" class="topicoPrincipal">
             <h1>MODENA HUMAITÁ</h1>
@@ -125,84 +135,82 @@
                 <div class="imagem-box">
                     <img src="IMG/elenco/Time A/Natan.jpg" alt="">
                 </div>
-
                 <div class="content" class="jogadores">
                     <h1 class="jogador">Natan Felix</h1>
                     <p>Ponteiro</p>
                 </div>
             </div>
-
+            <!-- =============================================================================== -->
             <div class="jogadores" class="jogadores">
                 <div class="imagem-box">
                     <img src="IMG/elenco/Time A/Tiago.jpg" alt="">
                 </div>
-
                 <div class="content">
                     <h1 class="jogador">Tiago Leite</h1>
                     <p>Levantador</p>
                 </div>
             </div>
-
+            <!-- =============================================================================== -->
             <div class="jogadores" class="jogadores">
                 <div class="imagem-box">
                     <img src="IMG/elenco/Time A/Leco.jpg" alt="">
                 </div>
-
                 <div class="content">
                     <h1 class="jogador">Leandro Peres</h1>
                     <p>Líbero</p>
                 </div>
             </div>
+            <!-- =============================================================================== -->
             <div class="jogadores" class="jogadores">
                 <div class="imagem-box">
                     <img src="IMG/elenco/Time A/everton.jpg" alt="">
                 </div>
-
                 <div class="content">
                     <h1 class="jogador">Everton Luís</h1>
                     <p>Central</p>
                 </div>
             </div>
+            <!-- =============================================================================== -->
             <div class="jogadores" class="jogadores">
                 <div class="imagem-box">
                     <img src="IMG/elenco/Time A/Igor.jpg" alt="">
                 </div>
-
                 <div class="content">
                     <h1 class="jogador">Igor Malta</h1>
                     <p>Oposto</p>
                 </div>
             </div>
+            <!-- =============================================================================== -->
             <div class="jogadores" class="jogadores">
                 <div class="imagem-box">
                     <img src="IMG/elenco/Time A/Cadu.jpg" alt="">
                 </div>
-
                 <div class="content">
                     <h1 class="jogador">Carlos Eduardo</h1>
                     <p>Ponteiro</p>
                 </div>
             </div>
+            <!-- =============================================================================== -->
             <div class="jogadores" class="jogadores">
                 <div class="imagem-box">
                     <img src="IMG/elenco/Time A/osvaldo.jpg" alt="">
                 </div>
-
                 <div class="content">
                     <h1 class="jogador">Osvaldo Freitas</h1>
                     <p>Ponteiro</p>
                 </div>
             </div>
+            <!-- =============================================================================== -->
             <div class="jogadores" class="jogadores">
                 <div class="imagem-box">
                     <img src="IMG/elenco/Time A/kitt.jpg" alt="">
                 </div>
-
                 <div class="content">
                     <h1 class="jogador">Clissianderson</h1>
                     <p>Central</p>
                 </div>
             </div>
+            <!-- =============================================================================== -->
         </div>
         <!-- ======================== TIME B ======================= -->
         <section id="TIME B" class="topicoPrincipal">
@@ -213,114 +221,112 @@
                 <div class="imagem-box">
                     <img src="IMG/elenco/Time B/Deivid.jpg" alt="">
                 </div>
-
                 <div class="content" class="jogadores">
                     <h1 class="jogador">Deivid Costa</h1>
                     <p>Central</p>
                 </div>
             </div>
-
+            <!-- =============================================================================== -->
             <div class="jogadores" class="jogadores">
                 <div class="imagem-box">
                     <img src="IMG/elenco/Time B/Deivison.jpg" alt="">
                 </div>
-
                 <div class="content">
                     <h1 class="jogador">Deivison Almeida</h1>
                     <p>Oposto</p>
                 </div>
             </div>
-
+            <!-- =============================================================================== -->
             <div class="jogadores" class="jogadores">
                 <div class="imagem-box">
                     <img src="IMG/elenco/Time B/felipe.jpg" alt="">
                 </div>
-
                 <div class="content">
                     <h1 class="jogador">Felipe</h1>
                     <p>Ponteiro</p>
                 </div>
             </div>
+            <!-- =============================================================================== -->
             <div class="jogadores" class="jogadores">
                 <div class="imagem-box">
                     <img src="IMG/elenco/Time B/fernandinho.jpg" alt="">
                 </div>
-
                 <div class="content">
                     <h1 class="jogador">Fernandinho</h1>
                     <p>Líbero</p>
                 </div>
             </div>
+            <!-- =============================================================================== -->
             <div class="jogadores" class="jogadores">
                 <div class="imagem-box">
                     <img src="IMG/elenco/Time B/Jean.jpg" alt="">
                 </div>
-
                 <div class="content">
                     <h1 class="jogador">Jean</h1>
                     <p>Levantador</p>
                 </div>
             </div>
+            <!-- =============================================================================== -->
             <div class="jogadores" class="jogadores">
                 <div class="imagem-box">
                     <img src="IMG/elenco/Time B/Mateus.jpg" alt="">
                 </div>
-
                 <div class="content">
                     <h1 class="jogador">Mateus</h1>
                     <p>Levantador</p>
                 </div>
             </div>
+            <!-- =============================================================================== -->
             <div class="jogadores" class="jogadores">
                 <div class="imagem-box">
                     <img src="IMG/elenco/Time B/pablo.jpg" alt="">
                 </div>
-
                 <div class="content">
                     <h1 class="jogador">Pablo</h1>
                     <p>Oposto</p>
                 </div>
             </div>
+            <!-- =============================================================================== -->
             <div class="jogadores" class="jogadores">
                 <div class="imagem-box">
                     <img src="IMG/elenco/Time B/pato.jpg" alt="">
                 </div>
-
                 <div class="content">
                     <h1 class="jogador">Pedro Lucas</h1>
                     <p>Central </p>
                 </div>
             </div>
+            <!-- =============================================================================== -->
             <div class="jogadores" class="jogadores">
                 <div class="imagem-box">
                     <img src="IMG/elenco/Time B/Samuel.jpg" alt="">
                 </div>
-
                 <div class="content">
                     <h1 class="jogador">Samuel Leão</h1>
                     <p>Ponteiro</p>
                 </div>
             </div>
+            <!-- =============================================================================== -->
             <div class="jogadores" class="jogadores">
                 <div class="imagem-box">
                     <img src="IMG/elenco/Time B/Thyago Martins.jpg" alt="">
                 </div>
-
                 <div class="content">
                     <h1 class="jogador">Thyago Martins</h1>
                     <p>Líbero</p>
                 </div>
             </div>
+            <!-- =============================================================================== -->
             <div class="jogadores" class="jogadores">
                 <div class="imagem-box">
                     <img src="IMG/elenco/Time B/yogr.jpg" alt="">
                 </div>
-
                 <div class="content">
                     <h1 class="jogador">Ygor</h1>
                     <p>Ponteiro</p>
                 </div>
             </div>
+            <!-- =============================================================================== -->
         </div>
         <!-- ========================== TIME FEMENINO ========================== -->
         <section id="diretoria" class="topicoPrincipal">
@@ -331,42 +337,72 @@
                 <div class="imagem-box">
                     <img src="IMG/elenco/Feminino/Amanda.jpg" alt="">
                 </div>
-
                 <div class="content">
                     <h1 class="jogador">Amanda Oliveira</h1>
                     <p>Ponteira</p>
                 </div>
             </div>
+            <!-- =============================================================================== -->
+            <div class="jogadores" class="jogadores">
+                <div class="imagem-box">
+                    <img src="IMG/elenco/Feminino/Bia.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h1 class="jogador">Beatriz Cardoso</h1>
+                    <p>Levantadora</p>
+                </div>
+            </div>
+            <!-- =============================================================================== -->
             <div class="jogadores" class="jogadores">
                 <div class="imagem-box">
                     <img src="IMG/elenco/Feminino/deise .jpg" alt="">
                 </div>
-
                 <div class="content">
                     <h1 class="jogador">Deise Almeida</h1>
                     <p>Oposta</p>
                 </div>
             </div>
+            <!-- =============================================================================== -->
             <div class="jogadores" class="jogadores">
                 <div class="imagem-box">
                     <img src="IMG/elenco/Feminino/Isis.jpg" alt="">
                 </div>
-
                 <div class="content">
                     <h1 class="jogador">Isis Isabelle</h1>
                     <p>Central</p>
                 </div>
             </div>
+            <!-- =============================================================================== -->
+            <div class="jogadores" class="jogadores">
+                <div class="imagem-box">
+                    <img src="IMG/elenco/Feminino/Julia ribeiro.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h1 class="jogador">Julia Ribeiro</h1>
+                    <p>Central</p>
+                </div>
+            </div>
+            <!-- =============================================================================== -->
+            <div class="jogadores" class="jogadores">
+                <div class="imagem-box">
+                    <img src="IMG/elenco/Feminino/Mariazinha.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h1 class="jogador">Mariazinha</h1>
+                    <p>Líbero</p>
+                </div>
+            </div>
+            <!-- =============================================================================== -->
             <div class="jogadores" class="jogadores">
                 <div class="imagem-box">
                     <img src="IMG/elenco/Feminino/Nathy.jpg" alt="">
                 </div>
-
                 <div class="content">
                     <h1 class="jogador">Nathaly Franciny</h1>
                     <p>Ponteira</p>
                 </div>
             </div>
+            <!-- =============================================================================== -->
         </div>
     </main>
 
